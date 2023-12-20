@@ -3,7 +3,6 @@
 """ This is to define a class square"""
 
 
-
 class Square:
     """To represent a square"""
 
