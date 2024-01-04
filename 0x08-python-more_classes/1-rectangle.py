@@ -5,7 +5,6 @@
 class Rectangle:
     """ this is to represent the class name rectangle"""
 
-
     def __init__(self, width=0, height=0):
         """this is to initialize a new rectangle
 
