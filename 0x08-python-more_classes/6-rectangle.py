@@ -63,7 +63,7 @@ class Rectangle:
 
         and to represent the rectangle wih # character
         """
-        if self.__width == 0 or self.height == 0:
+        if self.__width == 0 or self.__height == 0:
             return ("")
 
         size = []
@@ -80,6 +80,6 @@ class Rectangle:
         return (size)
 
     def __del__(self):
-        """for every delete, print a message"""
-        type(self).number_of_instance -= 1
+        """for every deletion print a message"""
+        type(self).number_of_instances -= 1
         print("Bye rectangle...")
