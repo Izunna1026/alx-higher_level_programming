@@ -8,11 +8,11 @@ const newDict = {};
 for (const d in valsUniq) {
   const list = [];
   for (const y in totalist) {
-    if (totalist[y][d] === valsUniq[j]) {
+    if (totalist[y][1] === valsUniq[d]) {
       list.unshift(totalist[y][0]);
     }
   }
-  newDict[valsUniq[j]] = list;
+  newDict[valsUniq[d]] = list;
 }
 console.log(newDict);
 
