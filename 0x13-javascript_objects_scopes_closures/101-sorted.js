@@ -5,14 +5,14 @@ const totalist = Object.entries(dict);
 const vals = Object.values(dict);
 const valsUniq = [...new set(vals)];
 const newDict = {};
-for (const d in valsUniq) {
+for (const j in valsUniq) {
   const list = [];
-  for (const y in totalist) {
-    if (totalist[y][1] === valsUniq[d]) {
-      list.unshift(totalist[y][0]);
+  for (const k in totalist) {
+    if (totalist[k][1] === valsUniq[j]) {
+      list.unshift(totalist[k][0]);
     }
   }
-  newDict[valsUniq[d]] = list;
+  newDict[valsUniq[j]] = list;
 }
 console.log(newDict);
 
